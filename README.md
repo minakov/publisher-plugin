@@ -10,13 +10,24 @@ Supported functionality:
 Usage
 -----
 
-### Before Proceeding
+### Recommendations
 
-Use at your own risk. I highly recommend creating a test application in the P
+Use at your own risk. I highly recommend testing with uploads to Alpha track first. My personal process:
 
-It is not recommended to upload builds to **any track** more than once a day. The production track should be updated even less frequently, and with extreme care
+1. **Developer** 
+    - Commit a release candidate branch
+2. **CI Server**
+    - Build and run acceptence test
+    - If passing upload to **alpha**
+3. **Developer**
+    - Log in to play
+    - Verify proper build details
+    - Promote to beta or prod
+
+It is not recommended to upload builds to **any track** more than once a day. The production track should be updated even less frequently, and with extreme care.
 
 See [Google Play Developer API Usage Instructions][play-api-usage] for more tips.
+
 
 ### What You Need
 
